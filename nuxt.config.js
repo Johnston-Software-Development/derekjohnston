@@ -2,12 +2,12 @@
 export default {
   ssr: false,
   target: 'static', // default is 'server'
+  router: { //for deploy on githubpages
+    base: '/derekjohnston/',
+  },
   /*
   ** Headers of the page
   */
-  router: {
-    base: '/derekjohnston/', //eg:- /crstnmac.github.io/
-  },
   head: {
     title: 'Derek Johnston - Software Dev',
     meta: [
