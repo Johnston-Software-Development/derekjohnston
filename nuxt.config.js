@@ -6,7 +6,7 @@ export default {
   ** Headers of the page
   */
   router: {
-    base: 'https://johnston-software-development.github.io/derekjohnston/', //eg:- /crstnmac.github.io/
+    base: '/derekjohnston/', //eg:- /crstnmac.github.io/
   },
   head: {
     title: 'Derek Johnston - Software Dev',
