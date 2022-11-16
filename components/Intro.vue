@@ -8,7 +8,7 @@
           br
           | ― Martin Fowler
         br
-        | Currently developing projects with Docker, NuxtJS, VueJS, ReactJS, NodeJS, Flutter(Dart), Ruby on Rails & PHP.
+        | Currently developing projects with Azure, AWS, Docker, NuxtJS, VueJS, NextJS, ReactJS, NodeJS, Flutter(Dart).
         br
         br
 </template>

@@ -69,10 +69,6 @@ b-container-fluid.text-center.vh-100
 <script>
 //TODO: add from validation
 export default {
-  data() {
-    return {
-    };
-  },
   computed: {
     currentRouteName() {
         return this.$route.name;

@@ -121,7 +121,7 @@ export default {
               descriptions: [
                 "YHP is an experience agency. Not just experiential, and not just branded events. YHP specializes in tapping into human experiences to create lasting brand engagement for its clients. YHP works with brands to plan, execute and capture emotional and memorable moments. Through impossibly on-point experiential campaigns and industry best practices, YHP is strengthening relationships between brands and their customers. Armed with a deep understanding of the emerging arts, culture and the need to share human experiences, YHP builds unique brand experiences and engagement strategies to engage with the mindset and motivations of real people.",
               ],
-              name: "Role",
+              name: "Responsibilities",
               descriptions: [
                 "- Constantly improving the code base.",
                 "- Deciding if development is possible or not while giving possible alternatives.",
@@ -140,7 +140,7 @@ export default {
           company: "Johnston Software Development",
           date: {
             start: "Jan 2020",
-            end: "current",
+            end: "Present",
           },
           technologies: [
             "Postman",
@@ -186,6 +186,11 @@ export default {
               name: "Who’s Jimmy",
               descriptions: [
                 "Ongoing development of a professional portfolio for a skilled film craftsman and clock-smith. Utilizing VueJS/NuxtJS and PHP.",
+              ],
+            },
+            {
+              descriptions: [
+                "...",
               ],
             },
           ],
