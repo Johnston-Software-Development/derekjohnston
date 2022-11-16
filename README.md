@@ -20,3 +20,12 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+added to nuxt config
+
+```
+  router: { //for deploy on githubpages
+    base: '/derekjohnston/',
+  },
+```
