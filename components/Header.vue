@@ -1,24 +1,25 @@
 <template lang="pug">
-  b-navbar.bg-success(toggleable="sm" type="dark" fixed="top")
-    b-button.d-none.d-sm-block.mr-2(v-b-toggle.sidebar-variant variant="success")
-      .navbar-toggler-icon
-
-    b-navbar-toggle.d-sm-none(target="nav-collapse")
-    b-collapse(id="nav-collapse" is-nav)
-      b-navbar-nav.ml-auto.d-sm-none
-        b-nav-item(tag="b-button",
-                  activeClass="active",
-                  to="/"
-                  exact) Home
-        b-nav-item(tag="b-button",
-                  activeClass="active",
-                  to="/knowledge") Knowledge
-        b-nav-item(tag="b-button",
-                  activeClass="active",
-                  to="/projects") Projects
-        b-nav-item(tag="b-button",
-                  activeClass="active",
-                  to="/contact") Contact
+b-navbar.bg-success(toggleable="sm" type="dark" fixed="top")
+  .p-2.navbar-brand
+    NuxtLink.text-white.m-2(to="/") Home
+  b-button.d-none.d-sm-block.mr-2(v-b-toggle.sidebar-variant variant="success")
+    .navbar-toggler-icon
+  b-navbar-toggle.d-sm-none(target="nav-collapse")
+  b-collapse(id="nav-collapse" is-nav)
+    b-navbar-nav.ml-auto.d-sm-none
+      b-nav-item(tag="b-button",
+                activeClass="active",
+                to="/"
+                exact) Home
+      b-nav-item(tag="b-button",
+                activeClass="active",
+                to="/knowledge") Knowledge
+      b-nav-item(tag="b-button",
+                activeClass="active",
+                to="/projects") Projects
+      b-nav-item(tag="b-button",
+                activeClass="active",
+                to="/contact") Contact
 </template>
 
 <style scoped>
