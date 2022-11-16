@@ -4,11 +4,14 @@
     H1 Projects
   .card-body
     .row
+      .col *click on a title to view examples*
+    .row
       .col-sm-12.col-md-12.col-lg-6.col-xxl-4.my-1(v-for="project in projects")
         dropdown(:id="project.id",
           :title="project.name",
           :localLink="project.local && project.address.length > 0 && project.address",
-          :link="!project.local && project.address.length > 0 && project.address")
+          :link="!project.local && project.address.length > 0 && project.address"
+          :isOpen="currentRouteName.includes('projects')")
           .card.m-0.p-0
             .card-header.text-black(v-if="project.quote")
                 | "{{project.quote}}"
@@ -23,6 +26,11 @@
 <script>
 import dropdown from "~/components/Dropdown";
 export default {
+  computed: {
+    currentRouteName() {
+        return this.$route.name;
+    }
+  },
 	components: {
 		dropdown,
 	},
