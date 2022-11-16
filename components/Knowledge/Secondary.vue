@@ -1,32 +1,22 @@
 <template lang="pug">
-  .container
-    .card
-      .card-header.bg-success
-        .row
-          .col-2
-          .col-8
-            h4 Additional
-          .col-2.text-right.text-white
-            b-button.m-1(variant="success" v-b-toggle.collapse-secondary)
-              span.when-opened
-                i.fa.fa-chevron-down(aria-hidden="true")
-              span.when-closed
-                i.fa.fa-chevron-up(aria-hidden="chevron-right")
-      .card-body.pb-0
-        b-collapse#collapse-secondary
-          .row.mb-2
-            .col-12.pb-3(v-for="skill in skills")
-              .row
-                .col.text-left
-                  h5.card-title
-                    | {{skill.category}}
-              .row
-                .col-lg-3.col-md-4.col-sm-4(v-for="subSkill in skill.subSkills")
-                  | {{subSkill}}
+dropdown(title="Additional")
+  .row.mb-2
+    .col-12.pb-3(v-for="skill in skills")
+      .row
+        .col.text-left
+          h5.card-title
+            | {{skill.category}}
+      .row
+        .col-lg-3.col-md-4.col-sm-4(v-for="subSkill in skill.subSkills")
+          | {{subSkill}}
 </template>
 
 <script>
+import dropdown from "~/components/Dropdown";
 export default {
+  components: {
+		dropdown
+  },
   data() {
     return {
       skills: [

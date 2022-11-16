@@ -1,37 +1,31 @@
 <template lang="pug">
-transition(name="fade")  
-  .card(v-if="isShowing")
-    .card-header.bg-success
-      .row
-        .col-2
-        .col-8
-          h4 Knowledge
-        .col-2.text-right.text-white
-          b-button.m-1(variant="success" v-b-toggle.collapse-primary)
-            span.when-opened
-              i.fa.fa-chevron-down(aria-hidden="true")
-            span.when-closed
-              i.fa.fa-chevron-up(aria-hidden="chevron-right")
-    .card-body
-      b-collapse#collapse-primary(visible)
-        .row
-          .col-12.pb-3(v-for="skill in skills")
-            .row
-              .col.text-left
-                h5.card-title
-                  | {{skill.category}}
-            .row
-              .col-lg-3.col-md-4.col-sm-4(v-for="subSkill in skill.subSkills")
-                | {{subSkill}}
+div
+  dropdown(title="Knowledge", isOpen=true)
     .row
-      .col-12.p-0
-        Secondary
+      .col-12.pb-3(v-for="skill in skills")
+        .row
+          .col.text-left
+            h5.card-title
+              | {{skill.category}}
+        .row
+          .col-lg-3.col-md-4.col-sm-4(v-for="subSkill in skill.subSkills")
+            | {{subSkill}}
+    //- dropdown(:id="project.id",
+      :title="project.name",
+      variant="success",
+      :localLink="project.local && project.address.length > 0 && project.address",
+      :link="!project.local && project.address.length > 0 && project.address")
+      .card-body
+        b-collapse#collapse-primary(visible)
+  Secondary
 </template>
 
 <script>
+import dropdown from "~/components/Dropdown";
 import Secondary from "~/components/Knowledge/Secondary";
 export default {
   components: {
+		dropdown,
     Secondary
   },
   data() {
