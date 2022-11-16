@@ -1,36 +1,36 @@
 <template lang="pug">
-  .card.my-2
-    .card-header.bg-success
-      H1 Contact
-    .card-body
-      .row.m-1
-        .col-lg-12
-          h2 Derek Johnston
-          h6
-            |  Software Developer
-          h6
-            a(href="mailto:Derek@DerekJohnston.ca") 
-              span.fa.fa-envelope(data-toggle="tooltip" title="Derek@DerekJohnston.ca")
-              |  Derek@DerekJohnston.ca
-      .row.m-2
-        .col-lg-12.pt-2
-          <form action="https://formspree.io/derek@derekjohnston.ca" method="post">
-            <div class="form-group">
-                <input type="text" id="name" name="name" class="form-control" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <input type="text" id="email" name="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input type="text" id="subject" name="_subject" class="form-control" placeholder="Subject">
-            </div>
-            <div class="form-group">
-                <textarea id="message" name="message" cols="30" rows="7" class="form-control" placeholder="Message..."></textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-            </div>
-          </form>
+.card.my-2
+  .card-header.bg-success
+    H1 Contact
+  .card-body
+    .row.m-1
+      .col-lg-12
+        h2 Derek Johnston
+        h6
+          |  Software Developer
+        h6
+          a(href="mailto:Derek@DerekJohnston.ca") 
+            span.fa.fa-envelope(data-toggle="tooltip" title="Derek@DerekJohnston.ca")
+            |  Derek@DerekJohnston.ca
+    .row.mt-2
+      .col-lg-12.pt-2
+        <form action="https://formspree.io/f/derek@derekjohnston.ca" method="post">
+          <div class="my-1 form-group">
+              <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+          </div>
+          <div class="my-1 form-group">
+              <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="my-1 form-group">
+              <input type="text" id="subject" name="_subject" class="form-control" placeholder="Subject">
+          </div>
+          <div class="my-1 form-group">
+              <textarea id="message" name="message" cols="30" rows="7" class="form-control" placeholder="Message..."></textarea>
+          </div>
+          <div class="mt-1 form-group">
+              <input type="submit" class="btn btn-success btn-send-message" value="Send Message">
+          </div>
+        </form>
 </template>
 <script>
 //TODO: add from validation
