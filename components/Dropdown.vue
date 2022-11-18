@@ -43,7 +43,7 @@ export default {
             default: 'success'
         },
         link: {
-            type: String,
+            type: String | Boolean,
             default: null
         },
         localLink: {
