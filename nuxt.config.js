@@ -1,7 +1,8 @@
 
 export default {
-  ssr: false,
-  target: 'static', // default is 'server'
+  mode: 'spa',
+  // ssr: false,
+  // target: 'static', // default is 'server'
   // router: { //for deploy on githubpages
   //   base: '/derekjohnston/',
   // },
