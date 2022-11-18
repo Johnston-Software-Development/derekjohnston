@@ -2,9 +2,9 @@
 export default {
   ssr: false,
   target: 'static', // default is 'server'
-  router: { //for deploy on githubpages
-    base: '/derekjohnston/',
-  },
+  // router: { //for deploy on githubpages
+  //   base: '/derekjohnston/',
+  // },
   /*
   ** Headers of the page
   */
