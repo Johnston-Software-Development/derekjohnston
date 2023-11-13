@@ -77,3 +77,7 @@ added to nuxt config
     base: '/derekjohnston/',
   },
 ```
+
+## reminder to always re-add website to [github pages](https://github.com/Johnston-Software-Development/derekjohnston/settings) after pushing to master
+
+TODO: fix this
