@@ -31,6 +31,16 @@ b-container-fluid.text-center.vh-100
             b-col.p-0
               b-button.m-1(variant="success"
                 activeClass="active",
+                to="/projects/YHP") YHP
+          b-row
+            b-col.p-0
+              b-button.m-1(variant="success"
+                activeClass="active",
+                to="/projects/hackathons") E-Data Now!
+          b-row
+            b-col.p-0
+              b-button.m-1(variant="success"
+                activeClass="active",
                 to="/projects/hackathons") Hackathons
           b-row.pt-2
             b-col.p-0

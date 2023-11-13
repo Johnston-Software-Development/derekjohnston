@@ -1,12 +1,12 @@
 <template lang="pug">
-  .container
-    Intro
-    Projects
-    Knowledge
-    Contact
+.container
+  Intro
+  Projects
+  Knowledge
+  Contact
 </template>
 <script>
-//TODO: Direct to resume builder, and add print to pdf option
+// TODO: Direct to resume builder, and add print to pdf option
 import Intro from "~/components/Intro";
 import Projects from "~/components/Projects";
 import Knowledge from "~/components/Knowledge";

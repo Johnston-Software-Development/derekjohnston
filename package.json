@@ -9,17 +9,39 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/font-awesome": "^1.0.4",
     "axios": "^0.27.2",
-    "bootstrap": "^5.2.0",
+    "bootstrap": "^4.6.2",
     "bootstrap-vue": "^2.22.0",
-    "nuxt": "^2.12.2",
-    "pug": "^3.0.1",
-    "pug-plain-loader": "^1.0.0",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "vue": "^2.7.10",
     "vue-markdown": "^2.2.4",
-    "vue-swatches": "^1.0.4"
+    "vue-server-renderer": "^2.7.10",
+    "vue-swatches": "^2.1.1",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/runtime": "^7.23.2",
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "prettier": "^2.7.1"
   }
 }
