@@ -29,14 +29,14 @@ b-container-fluid.text-center.vh-100
           hr
           b-row
             b-col.p-0
-              b-button.m-1(variant="success"
-                activeClass="active",
-                to="/projects/YHP") YHP
+              a(href="https://www.workatyhp.com/" target="_blank")
+                b-button.m-1(variant="success")
+                  | YHP
           b-row
             b-col.p-0
-              b-button.m-1(variant="success"
-                activeClass="active",
-                to="/projects/hackathons") E-Data Now!
+              a(href="https://www.edatanow.com/" target="_blank")
+                b-button.m-1(variant="success")
+                  | E-Data Now!
           b-row
             b-col.p-0
               b-button.m-1(variant="success"
@@ -77,7 +77,7 @@ b-container-fluid.text-center.vh-100
 </template>
 
 <script>
-//TODO: add from validation
+// TODO: add from validation
 export default {
   computed: {
     currentRouteName() {
