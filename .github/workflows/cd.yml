@@ -3,10 +3,10 @@ name: cd
 on:
   push:
     branches:
-      - gh-pages
+      - master
   pull_request:
     branches:
-      - gh-pages
+      - master
 
 jobs:
   cd:
@@ -37,3 +37,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: derekjohnston.ca
