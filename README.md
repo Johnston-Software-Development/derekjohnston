@@ -72,6 +72,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 added to nuxt config
 
+
 ```
   router: { //for deploy on githubpages
     base: '/derekjohnston/',
