@@ -9,12 +9,12 @@
         h6
           |  Software Developer
         h6
-          a(href="mailto:Derek@DerekJohnston.ca") 
-            span.fa.fa-envelope(data-toggle="tooltip" title="Derek@DerekJohnston.ca")
-            |  Derek@DerekJohnston.ca
+          a(:href="'mailto:'+email") 
+            span.fa.fa-envelope(data-toggle="tooltip" :title="email")
+            | {{ email }}
     .row.mt-2
       .col-lg-12.pt-2
-        <form action="https://formspree.io/f/derek@derekjohnston.ca" method="post">
+        <form :action="'https://formspree.io/f/'+email" method="post">
           <div class="my-1 form-group">
               <input type="text" id="name" name="name" class="form-control" placeholder="Name">
           </div>
@@ -33,12 +33,13 @@
         </form>
 </template>
 <script>
-//TODO: add from validation
+import about from "~/assets/about.json";
 export default {
   data() {
     return {
       images: ["me1.png", "me2.png"],
-      image: "me1.png"
+      image: "me1.png",
+      email: about.about.email
     };
   },
   methods: {
